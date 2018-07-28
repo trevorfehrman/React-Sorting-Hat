@@ -90,7 +90,7 @@ class App extends Component {
 				{
 					name: "Slytherin",
 					details:
-						"You are audacious.  You understand that rules are guidlines to keep the weaker among us safe and you are not weak."
+						"You are audacious.  You understand that rules are guidelines to keep the weaker among us safe and you are not weak."
 				}
 			]
 		};
@@ -98,7 +98,6 @@ class App extends Component {
 
 	handleWelcome = () => {
 		this.setState({ stage: 2 });
-		console.log("hello");
 	};
 
 	handleReset = () => {
@@ -111,7 +110,6 @@ class App extends Component {
 			this.state.questionArray.map(e => (e.answer ? "1" : "0")).join(""),
 			2
 		);
-		console.log(answerEval);
 
 		switch (true) {
 			case answerEval <= 15:
